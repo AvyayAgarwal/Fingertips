@@ -6,29 +6,33 @@
 function init_options () {
     console.log("function: init_options");
 
+    chrome.storage.sync.get('task', function (task) {
+      console.log(task);
+
     //load currently stored options configuration
-    var task = localStorage['task'];
+    task = (task || {}).task || '';
 
     //set the current state of the options form elements to match the stored options values
     //favorite_movie
     if (task) {
-        var task_select = document.getElementById('task_select');
-        for (var i=0; i < task_select.children.length; i++) {
-            var option = task_select.children[i];
+        var task_select = document.getElementById('task-dropdown');
+        for (var i=0; i < task_select.options.length; i++) {
+            var option = task_select.options[i];
             if (option.value == task) {
-                option.selected = 'true';
+                task_select.selectedIndex = i;
                 break;
             }
         }
     }
+  });
 }
 
 function save_options () {
     console.log("function: save_options");
 
-    //favorite-movie-dropdown
-    var favorite_movie = document.getElementById('task_select').children[document.getElementById('task_select').selectedIndex].value;
-    localStorage['task'] = task;
+    //task_select
+    var task = document.getElementById('task-dropdown').options[document.getElementById('task-dropdown').selectedIndex].value;
+    chrome.storage.sync.set({ "task" : task });
     console.log("task= " + task);
 }
 

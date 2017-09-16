@@ -2,7 +2,7 @@
     <head>
     </head>
     <body>
-        <h2>Stop Doing That</h2>
+        <h1>Stop Doing That</h1>
         <div><b>Version:</b> 1.0</div>
         <div>
           <p>
