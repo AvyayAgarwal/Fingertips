@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <!-- load javascript: jQuery 1.9.1 - http://jquery.com/ -->
+        <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+
+        <!-- load javascript: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/ -->
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+        <!-- load stylesheets: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/index.html -->
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"></link>
+
+        <!-- load stylesheets: internal -->
+        <link rel="stylesheet" type="text/css" href="../css/global.css"></link>
+        <link rel="stylesheet" type="text/css" href="../css/options.css"></link>
+    </head>
+    <body>
+        <div id="options-outer">
+            <div id="options-inner">
+                <div id="options-page-title" class="page-title">Stop Doing That</div>
+                <div id="options-page-subtitle" class="page-subtitle">What do you want to stop doing?</div>
+                <div id="options-area">
+                    <div class="control-group">
+                        <label class="control-label" for="task-dropdown">Tasks</label>
+                        <div class="controls">
+                            <select id="task-dropdown" class="span5">
+                                <option value="Compulsively Buying Useless Things">Compulsively Buying Useless Things</option>
+                                <option value="Lurking on Reddit">Lurking on Reddit</option>
+                                <option vlaue="Aimlessly Scrolling Through Facebook Feed">Aimlessly Scrolling Through Facebook Feed</option>
+                                <option value="Streaming My 20th Video on Cats">Streaming My 20th Video on Cats</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button id="save-options-button" class="btn btn-success">Save Options</button>
+            </div>
+        </div>
+
+        <!-- load javascript: unique html page javascript file -->
+        <script type="text/javascript" src="../js/options.js"></script>
+    </body>
+</html>
