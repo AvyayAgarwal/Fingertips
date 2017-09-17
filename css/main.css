@@ -25,7 +25,7 @@ div#main-inner {
     background: #839eaa;
     font-family: 'Oxygen-Regular';
 
-    
+
 }
 
 div#main-title {
@@ -46,7 +46,7 @@ img#main-image {
 }
 
 div#main-about-text {
-    margin-top: 0px;
+    margin-top: 10px;
     text-align: center;
     font-style: oblique;
     color: #d9d9d9;
@@ -62,7 +62,7 @@ div#main-about-text {
 }
 
 .myButton {
-    background-color:#7f7972;
+    background-color:#D3D3D3;
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     border-radius:4px;
@@ -71,7 +71,7 @@ div#main-about-text {
     cursor:pointer;
     color:#ffffff;
     font-family:'Oxygen';
-    font-size:17px;
+    font-size:10px;
     padding:10px 17px;
     text-decoration:none;
     position: absolute;

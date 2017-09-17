@@ -21,6 +21,7 @@ div#options-inner {
 div#options-page-title {
 
 	font-family: "Oxygen";
+  font-size: 46px; 
 	text-align: center;
 	padding: 20px;
 	font-weight: bold;
